@@ -9,12 +9,7 @@
             require_once 'view/employee/index.php';
         }
 
-        function detail(){
-            $employeeMa = $_GET['id'];
-            $employeeModel = new EmployeeModel();
-            $employees = $employeeModel->getEmployee($employeeMa);
-            require_once 'view/employee/detail.php';
-        }
+       
         function add(){
                 $error = '';
                 if (isset($_POST['submit'])) {

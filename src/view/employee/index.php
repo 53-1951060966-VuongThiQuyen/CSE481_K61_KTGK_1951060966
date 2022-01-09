@@ -28,7 +28,7 @@
                     <th scope="col">Phòng ban</th>
                     <th scope="col">Lương</th>
                     <th scope="col">Ngày vào làm</th>
-                    <th scope="col">Chi tiết</th>
+                   
                     <th scope="col">Sửa</th>
                     <th scope="col">Xóa</th>
 
@@ -47,14 +47,13 @@
                     <td><?php echo $employee['ngayvaolam']; ?></td>
                     <?php
                     //khai báo 3 url xem, sửa, xóa
-                    $urlDetail =
-                        "index.php?controller=employee&action=detail&id=" . $employee['maNV'];
+                   
                     $urlEdit =
                         "index.php?controller=employee&action=showEdit&id=" . $employee['maNV'];
                     $urlDelete =
                         "index.php?controller=employee&action=delete&id=" . $employee['maNV'];
                     ?>
-                    <td><a href="<?php echo $urlDetail?>">Chi tiết</a> &nbsp;</td>
+                   
                     <td><a href="<?php echo $urlEdit?>"><i class="bi bi-pencil-square"></i></a> &nbsp;</td>
                     <td><a onclick="return confirm('Bạn chắc chắn muốn xóa?')"
                        href="<?php echo $urlDelete?>">
